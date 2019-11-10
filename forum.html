@@ -1,0 +1,210 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie|Fredericka+the+Great|Hepta+Slab|
+		Liu+Jian+Mao+Cao|Mansalva|Sacramento|Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+	<title> Simply Community</title>
+	
+
+	<style>
+	
+
+		
+	body {
+background: rgb(255,125,255);
+background: linear-gradient(0deg, rgba(255,125,255,1) 0%, rgba(118,255,248,1) 99%, rgba(255,255,255,1) 100%);
+	
+
+   
+  
+}
+
+	
+	
+	#nav {
+		text-align: left;
+		height:150px;
+		
+	}
+	
+	#nav ul {
+		list-style-type: none;
+		
+		padding: 0;
+		
+}
+
+	#nav li {
+		display:inline;
+		padding: 30px;
+}
+
+	#nav a {
+		display: inline-block;
+
+		background-color: #ffffff;
+}
+	#nav a:link{
+		text-decoration: none;
+		text-align: left;
+		font-family: 'Poppins', sans-serif;
+		font-size: 20px;
+		background-color: #ffffff;
+		color: #56c6e2;
+		padding: 11px 25px;
+		width:120px;
+		border-radius: 10px;
+		}
+		
+	#nav a:visited { 
+		color: #2c5861;
+  	}   
+	
+	#nav a:hover { 
+		color: #56c6e2;
+		font-weight: bold;
+		border-style:solid;
+		border-color: #678b99;
+		border-width: 2px;
+  	}
+	#newElementId{
+	text-align: -webkit-center;
+	font-family: 'Indie Flower', cursive; letter-spacing: 3px; font-size: 20px; color: white; text-align: center;
+	}
+     #dynamicCheck{
+	 text-align: -webkit-center;
+	 
+	 }
+
+}
+
+
+
+
+
+		
+	</style>
+  </head>
+  <body>
+  
+	<div id = "nav">
+
+	<ul>
+		<li> <a href="Technica.html">Back</a></li>
+		
+		
+	</ul>
+	
+</div>
+	<h1 style= "font-family: 'Poppins', sans-serif;font-size: 130px; font-weight: lighter; color: black; text-align: center; text-decoration:underline;"> 
+	
+TECHNICA FORUM
+</h1>
+	
+	<h2 style= "font-family: 'Indie Flower', cursive; letter-spacing: 3px; font-size: 20px; color: white; text-align: center;">
+	 The non-offical community page for 2019 Technica! <br></br>
+	</h2>
+
+
+
+	<head>
+		<Title>Create Text Posts</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+	</head>
+	<body>
+		<div  id="dynamicCheck">
+			<input type="button" value="Create a textpost" onclick="createNewElement();"/>
+		</div>
+
+		<div id="newElementId">Share your thoughts!</div>
+		<p id= "post">
+		</p>
+		<script type="text/JavaScript">
+			function createNewElement() {
+			
+
+				// First create a DIV element.
+				var txtNewInputBox = document.createElement('div');
+				
+				// Then add the content (a new input box) of the element.
+				txtNewInputBox.innerHTML = "<input type='text' id='newInputBox'>";
+
+				// Finally put it where it is supposed to appear.
+				document.getElementById("newElementId").appendChild(txtNewInputBox);
+			
+				var button = document.createElement('button');
+				button.innerHTML = 'submit';
+				button.onclick = postThePost;
+				button.id="btn";
+				document.getElementById("newElementId").appendChild(button);
+			}
+			
+			function postThePost() {
+				var para = document.createElement("p");
+				para.innerHTML = document.getElementById("newInputBox").value + '<br/>'
+				para.style.border = "3px solid #ffffff";
+				para.style.fill = "white";
+				para.style.width = "500px";
+				
+				document.getElementById("newElementId").appendChild(para);
+				
+				document.getElementById("newElementId").removeChild(document.getElementById("btn"));
+				
+				document.getElementById("newInputBox").parentNode.removeChild(document.getElementById("newInputBox"));
+				
+				
+			}
+			
+		</script>
+	</body>
+</html>
+		
+
+<body>
+
+
+
+
+
+</body>
+
+</html>
+
+</script>
+	</body>
+</html>
+		
+
+
+	
+	
+
+
+  </body>
+ </html>
+
+			
+ 
+
+
+		
+</div>
+	
+	
+
+
+  </body>
+ </html>
+
